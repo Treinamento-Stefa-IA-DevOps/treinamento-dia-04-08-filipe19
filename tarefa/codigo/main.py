@@ -41,8 +41,8 @@ def get():
 
 @app.get("/model")
 def saida():
-        return (
-            {"survived": bool(titanic)},	
-            {"status": 200},
-	        {"message": "A predição foi concluida!"}
-        )
+    return (
+                {"survived": bool(titanic)},	
+                {"status": 200},
+	            {"message": "A predição foi concluida!"}
+            )
