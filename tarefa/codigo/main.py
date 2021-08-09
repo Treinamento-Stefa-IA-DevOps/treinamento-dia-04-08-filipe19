@@ -25,7 +25,7 @@ def titanic(sex: int, age: float, lifeboat: int, p_class: int):
 
     with open("model/Titanic.pkl", "rb") as fid: 
         titanic = pickle.load(fid)
-        predicao = titanic([sex, age, lifeboat, p_class])
+        predicao = titanic.predict([sex, age, lifeboat, p_class])
     
     return {
             {"survived": bool(predicao)},	
